@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+video,
+canvas {
+    width: 700px;
+    border-radius: 20px;
+    border: 4px solid cyan;
+}
+
+.texto {
+    margin-top: 20px;
+    font-size: 30px;
+}

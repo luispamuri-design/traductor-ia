@@ -1,0 +1,7 @@
+
+flask
+tensorflow
+tensorflowjs
+numpy
+gunicorn
+
