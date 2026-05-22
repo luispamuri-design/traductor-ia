@@ -272,6 +272,39 @@ const camera = new Camera(videoElement, {
 
 camera.start();
 
+
+// -----------------------------
+// BOTON HABLAR MOVIL
+// -----------------------------
+
+const btnHablar = document.getElementById("btnHablar");
+
+btnHablar.addEventListener("click", () => {
+
+    if (texto.trim() !== "") {
+
+        // Detener voz anterior
+        speechSynthesis.cancel();
+
+        // Crear voz
+        const speech =
+            new SpeechSynthesisUtterance(texto);
+
+        // Configuracion
+        speech.lang = "es-ES";
+
+        speech.rate = 1;
+
+        speech.volume = 1;
+
+        speech.pitch = 1;
+
+        // Hablar
+        speechSynthesis.speak(speech);
+    }
+});
+
+
 // -----------------------------
 // TECLAS
 // -----------------------------
